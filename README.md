@@ -15,6 +15,7 @@ A comment-structure linter for source trees. It scans source files and flags com
 - Detect excessively long comments above configurable length
 - Multi-language file awareness across `.py`, `.js`, `.ts`, `.tsx`, `.md`, `.yaml`, `.yml`, `.json`, `.toml`
 - JSON or human-friendly text output
+- Module-style invocation via `python -m cmclean`
 
 ## Installation
 
@@ -29,6 +30,11 @@ cmclean /path/to/project
 cmclean /path/to/project --json
 ```
 
+```bash
+python -m cmclean /path/to/project
+python -m cmclean /path/to/project --json
+```
+
 ### Exit codes
 
 - `0` No questionable comments found
@@ -38,13 +44,18 @@ cmclean /path/to/project --json
 
 ```
 cmclean/
+├── .github/workflows/tests.yml
 ├── src/cmclean/
 │   ├── __init__.py
+│   ├── __main__.py
 │   ├── cli.py
 │   ├── engine.py
 │   └── models.py
 ├── tests/
 │   └── test_cmclean.py
+├── docs/
+│   └── docs.md
+├── examples/demo_clean.py
 ├── pyproject.toml
 └── README.md
 ```
@@ -53,8 +64,16 @@ cmclean/
 
 ```bash
 python -m pip install -e '.[dev]'
-pytest
+python -m pytest
 ```
+
+## Contributing
+
+Issues and pull requests are welcome. Please keep changes focused on comment-hygiene behavior, supported file patterns, and documentation accuracy.
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for details.
 
 ## Tags / keywords
 
