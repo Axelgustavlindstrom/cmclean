@@ -71,10 +71,10 @@ python -m pytest
 
 Issues and pull requests are welcome. Please keep changes focused on comment-hygiene behavior, supported file patterns, and documentation accuracy.
 
+## Repository
+
+https://github.com/Axelgustavlindstrom/cmclean
+
 ## License
 
 This project is licensed under the MIT License. See `LICENSE` for details.
-
-## Tags / keywords
-
-comment linter, clean code, static analysis, cli, todo, developer tooling
