@@ -9,7 +9,7 @@ description = "A comment-structure linter for Python that flags TODO-like debris
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "WeeklyProjectAgent" }]
+authors = [{ name = "Axel Gustav Lindström" }]
 keywords = ["cli", "linter", "comments", "static-analysis", "clean-code"]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -22,6 +22,11 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
 ]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Axelgustavlindstrom/cmclean"
+Repository = "https://github.com/Axelgustavlindstrom/cmclean"
+Issues = "https://github.com/Axelgustavlindstrom/cmclean/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7"]
