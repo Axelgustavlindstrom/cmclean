@@ -23,7 +23,19 @@ htmlcov/
 .idea
 .vscode
 
-# Project artifacts
+# Lint/tooling
+.ruff_cache/
+
+# Packaging/runtime metadata
+pdm.lock
+poetry.lock
+.python-version
+
+# Logs/temp artifacts
+*.log
+.tmp/
+tmp/
+out/
 
 # Agent metadata files
 AGENTS.md
