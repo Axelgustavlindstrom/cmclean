@@ -7,7 +7,6 @@ from pathlib import Path
 from cmclean.engine import analyze
 
 DEMO_SNIPPET = """\
-# TODO: review before merge
 # normal comment
 x = 1
 """
